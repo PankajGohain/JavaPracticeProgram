@@ -2,66 +2,70 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-29T19:59:31 IST" name="Default suite" finished-at="2022-03-29T19:59:32 IST" duration-ms="1260">
+  <suite started-at="2022-04-05T23:53:04 IST" name="Default suite" finished-at="2022-04-05T23:53:05 IST" duration-ms="919">
     <groups>
     </groups>
-    <test started-at="2022-03-29T19:59:31 IST" name="Default test" finished-at="2022-03-29T19:59:32 IST" duration-ms="1260">
+    <test started-at="2022-04-05T23:53:04 IST" name="Default test" finished-at="2022-04-05T23:53:05 IST" duration-ms="919">
       <class name="package2.ExcelDataProvider">
-        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-03-29T19:59:32 IST" name="userPass" data-provider="login" finished-at="2022-03-29T19:59:32 IST" duration-ms="12" status="PASS">
+        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-04-05T23:53:05 IST" name="userPass" data-provider="login" finished-at="2022-04-05T23:53:05 IST" duration-ms="11" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin@yourstore.com ]]>
+                <![CDATA[admin1@yourstore.com ]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin]]>
+                <![CDATA[admin1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userPass -->
-        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-03-29T19:59:32 IST" name="userPass" data-provider="login" finished-at="2022-03-29T19:59:32 IST" duration-ms="3" status="PASS">
+        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-04-05T23:53:05 IST" name="userPass" data-provider="login" finished-at="2022-04-05T23:53:05 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin@yourstore.com ]]>
+                <![CDATA[admin2@yourstore.com ]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[adm]]>
+                <![CDATA[adm2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userPass -->
-        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-03-29T19:59:32 IST" name="userPass" data-provider="login" finished-at="2022-03-29T19:59:32 IST" duration-ms="6" status="PASS">
+        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-04-05T23:53:05 IST" name="userPass" data-provider="login" finished-at="2022-04-05T23:53:05 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[adm@yourstore.com]]>
+                <![CDATA[adm3@yourstore.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin]]>
+                <![CDATA[admin3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userPass -->
-        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-03-29T19:59:32 IST" name="userPass" data-provider="login" finished-at="2022-03-29T19:59:32 IST" duration-ms="5" status="PASS">
+        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-04-05T23:53:05 IST" name="userPass" data-provider="login" finished-at="2022-04-05T23:53:05 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[adm4@yourstore.com]]>
+              </value>
             </param>
             <param index="1">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[adm4]]>
+              </value>
             </param>
           </params>
           <reporter-output>

@@ -8,10 +8,10 @@ public class addOnlyNumbersFromString {
 		int sum = 0;
 		int count = 0;
 
-		for (int i = 0; i <= sArray.length - 1; i++) {
-			if (Character.isDigit(sArray[i])) {
+		for (Character a : sArray) {
+			if (Character.isDigit(a)) {
 				count++;
-				sum = sum + Character.getNumericValue(sArray[i]);
+				sum = sum + Character.getNumericValue(a);
 			}
 		}
 		System.out.println(sum);

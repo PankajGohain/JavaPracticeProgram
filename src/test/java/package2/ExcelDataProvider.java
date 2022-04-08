@@ -38,12 +38,12 @@ public class ExcelDataProvider {
 		XSSFRow row;
 		XSSFCell cell;
 
-		for (int i = 1; i < rownum; i++) {
+		for (int i = 0; i < rownum; i++) {
 			for (int j = 0; j < colnum; j++) {
 
-				row = sheet.getRow(i);
+				row = sheet.getRow(i+1);
 				cell = row.getCell(j);
-				data[i - 1][j] = cell.getStringCellValue();
+				data[i][j] = cell.getStringCellValue();
 
 			}
 		}

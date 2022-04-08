@@ -6,9 +6,9 @@ import java.util.Set;
 public class Array_Subset {
 
 	public static void main(String[] args) {
-
-		int[] s2 = { 5, 8, 2 };
+		
 		int[] s1 = { 1, 5, 4, 6, 8, 2 };
+		int[] s2 = { 5, 8, 2 };
 		int[] s3 = { 5, 8, 2, 7 };
 
 		Set<Integer> s = new HashSet<Integer>();
