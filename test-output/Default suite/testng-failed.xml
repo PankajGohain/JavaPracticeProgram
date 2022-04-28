@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="package2.ExcelDataProvider">
+      <class name="ExtendReport.TestCases.Myntra">
         <methods>
-          <include name="userPass"/>
+          <include name="launchMyntra"/>
         </methods>
-      </class> <!-- package2.ExcelDataProvider -->
+      </class> <!-- ExtendReport.TestCases.Myntra -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

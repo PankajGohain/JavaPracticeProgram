@@ -1,77 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-05T23:53:04 IST" name="Default suite" finished-at="2022-04-05T23:53:05 IST" duration-ms="919">
+  <suite started-at="2022-04-28T20:12:33 IST" name="Suite" finished-at="2022-04-28T20:12:46 IST" duration-ms="12238">
     <groups>
     </groups>
-    <test started-at="2022-04-05T23:53:04 IST" name="Default test" finished-at="2022-04-05T23:53:05 IST" duration-ms="919">
-      <class name="package2.ExcelDataProvider">
-        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-04-05T23:53:05 IST" name="userPass" data-provider="login" finished-at="2022-04-05T23:53:05 IST" duration-ms="11" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin1@yourstore.com ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin1]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-04-28T20:12:33 IST" name="Test" finished-at="2022-04-28T20:12:46 IST" duration-ms="12238">
+      <class name="ExtendReport.TestCases.Amazon">
+        <test-method signature="launchAmazon()[pri:0, instance:ExtendReport.TestCases.Amazon@790da477]" started-at="2022-04-28T20:12:33 IST" name="launchAmazon" finished-at="2022-04-28T20:12:43 IST" duration-ms="9280" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userPass -->
-        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-04-05T23:53:05 IST" name="userPass" data-provider="login" finished-at="2022-04-05T23:53:05 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin2@yourstore.com ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adm2]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- launchAmazon -->
+      </class> <!-- ExtendReport.TestCases.Amazon -->
+      <class name="ExtendReport.TestCases.FlipKart">
+        <test-method signature="launchFlipkart()[pri:0, instance:ExtendReport.TestCases.FlipKart@14fc5f04]" started-at="2022-04-28T20:12:33 IST" name="launchFlipkart" finished-at="2022-04-28T20:12:44 IST" duration-ms="10882" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userPass -->
-        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-04-05T23:53:05 IST" name="userPass" data-provider="login" finished-at="2022-04-05T23:53:05 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[adm3@yourstore.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin3]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- launchFlipkart -->
+      </class> <!-- ExtendReport.TestCases.FlipKart -->
+      <class name="ExtendReport.TestCases.Myntra">
+        <test-method signature="launchMyntra()[pri:0, instance:ExtendReport.TestCases.Myntra@6e2829c7]" started-at="2022-04-28T20:12:33 IST" name="launchMyntra" finished-at="2022-04-28T20:12:45 IST" duration-ms="11773" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Flipkart] but found [Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Flipkart] but found [Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at ExtendReport.TestCases.Myntra.launchMyntra(Myntra.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userPass -->
-        <test-method signature="userPass(java.lang.String,java.lang.String)[pri:0, instance:package2.ExcelDataProvider@49ec71f8]" started-at="2022-04-05T23:53:05 IST" name="userPass" data-provider="login" finished-at="2022-04-05T23:53:05 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[adm4@yourstore.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adm4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userPass -->
-      </class> <!-- package2.ExcelDataProvider -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- launchMyntra -->
+      </class> <!-- ExtendReport.TestCases.Myntra -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

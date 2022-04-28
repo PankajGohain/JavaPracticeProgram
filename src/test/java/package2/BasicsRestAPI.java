@@ -27,7 +27,7 @@ public class BasicsRestAPI {
 		String response = given().log().all()
 					.queryParam("key", "qaclick123")
 					.header("Content-Type", "application/json")
-					.body(payload.AddPlace()).
+					.body(payload.AddPlace())
 				.when()
 					.post("maps/api/place/add/json")
 				.then()
