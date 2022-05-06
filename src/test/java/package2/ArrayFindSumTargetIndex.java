@@ -36,3 +36,5 @@ public class ArrayFindSumTargetIndex {
 		return null;
 	}
 }
+
+//Time complexity: O(n)

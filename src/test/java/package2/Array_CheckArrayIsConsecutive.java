@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Find the largest and smallest number in an unsorted integer array or
 
-public class ArrayCheckIsConsecutive {
+public class Array_CheckArrayIsConsecutive {
 
 	public static void main(String[] args) {
 		int[] arr = { 5, 2, 3, 1, 4, 6 };

@@ -5,7 +5,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class ArrayDuplicateElement {
+//Display duplicate values in the array
+
+public class Array_DisplayDuplicateElement {
 
 	public static void main(String[] args) {
 
