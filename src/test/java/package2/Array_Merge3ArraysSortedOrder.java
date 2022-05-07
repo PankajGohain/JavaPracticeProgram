@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ArrayMerge3Arrays {
+public class Array_Merge3ArraysSortedOrder {
 
 	public static void main(String[] args) {
 

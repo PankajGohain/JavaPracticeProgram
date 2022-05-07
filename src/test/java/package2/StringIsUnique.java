@@ -19,7 +19,7 @@ public class StringIsUnique {
 				if (a[i] == a[j]) {
 					count = count + 1;
 				}
-			}													//Time complexity: O(n)
+			}													//Time complexity: O(n2)
 		}
 
 		System.out.println(count);

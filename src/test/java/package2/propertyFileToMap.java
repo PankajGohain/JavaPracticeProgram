@@ -36,12 +36,12 @@ public class propertyFileToMap {
 			String[] parts = line.split("=");
 
 			// first part is name, second is number
-			String name = parts[0].trim();
-			String number = parts[1].trim();
+			String key = parts[0].trim();
+			String value = parts[1].trim();
 
 			// put name, number in HashMap if they are not empty
-			if (!name.equals("") && !number.equals(""))
-				map.put(name, number);
+			if (!key.equals("") && !value.equals(""))
+				map.put(key, value);
 
 		}
 		return map;

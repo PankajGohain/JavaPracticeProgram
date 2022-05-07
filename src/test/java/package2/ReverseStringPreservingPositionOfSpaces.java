@@ -14,7 +14,7 @@ public class ReverseStringPreservingPositionOfSpaces {
 		}
 
 		// Initializing 'j' with length of resultArray
-		int j = resultArray.length - 1;
+		int j = resultArray.length - 1;  //so that it will iterate from end
 
 		// Second for loop :
 		// we copy every non-space character of inputStringArray

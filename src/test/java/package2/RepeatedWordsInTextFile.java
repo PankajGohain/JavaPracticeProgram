@@ -11,7 +11,8 @@ import java.util.Set;
 
 public class RepeatedWordsInTextFile {
 
-	public static void main(String[] args) {
+	@SuppressWarnings("resource")
+	public static void main(String[] args) throws IOException {
 
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		String arrayWord[] = null;
@@ -19,9 +20,8 @@ public class RepeatedWordsInTextFile {
 		BufferedReader rd;
 		int count = 0;
 		String mostRepeatedWord = null;
-		try {
 			rd = new BufferedReader(
-					new FileReader("D:\\Eclipse-project\\JavaProgram\\src\\Package2\\repeatedWord.txt"));
+					new FileReader(System.getProperty("user.dir") + "//src//test//java//package2//repeatedWord.txt"));
 			while ((fileRead = rd.readLine()) != null) {
 				arrayWord = fileRead.toLowerCase().split(" ");
 				for (String arr : arrayWord) {
@@ -33,12 +33,6 @@ public class RepeatedWordsInTextFile {
 				}
 
 			}
-		} catch (FileNotFoundException e) {
-
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 
 		Set<String> s = map.keySet();
 

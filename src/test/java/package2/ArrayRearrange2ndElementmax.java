@@ -1,6 +1,7 @@
 package package2;
 
-//Java program to rearrange a given array of unique elements such that every second element of the array is greater than its left and right elements.
+//Java program to rearrange a given array of unique elements such that every second element of the
+//array is greater than its left and right elements.
 
 import java.util.Arrays;
 
