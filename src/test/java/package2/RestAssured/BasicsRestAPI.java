@@ -1,4 +1,4 @@
-package package2;
+package package2.RestAssured;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;

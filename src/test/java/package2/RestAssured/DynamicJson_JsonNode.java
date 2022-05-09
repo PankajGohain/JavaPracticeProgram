@@ -1,4 +1,4 @@
-package package2;
+package package2.RestAssured;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

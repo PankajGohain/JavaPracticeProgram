@@ -1,4 +1,4 @@
-package package2;
+package package2.RestAssured;
 
 import java.io.File;
 import java.io.IOException;
