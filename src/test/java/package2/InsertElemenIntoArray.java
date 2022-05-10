@@ -25,6 +25,8 @@ public class InsertElemenIntoArray {
 
 		System.out.println(Arrays.toString(arr));
 
+		String array[]= {"a","b","c"};
+		
 		// Method 1
 		List<String> list = Arrays.asList(array);
 		System.out.println(list);

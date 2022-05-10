@@ -17,13 +17,13 @@ public class LargestSumContiguousSubarray {
 
 			if (largest_sum < sum) {
 				largest_sum = sum;
-				start = count;
+				start = count; // these two lines are to find the starting & ending position
 				end = i;
 			}
 
 			if (sum < 0) {
 				sum = 0;
-				count = i + 1;
+				count = i + 1; //to find the starting & ending position
 			}
 		}
 

@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/user/2"
+  },
+  "response": {
+    "body": "Hellow wiremock",
+    "headers": {
+      "Content-Type": "text/plain",
+      "token": "AuthToken_87654"
+    }
+  }
+}
