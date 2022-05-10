@@ -6,7 +6,7 @@ public class PrimeNumber {
 
 		int num =7;
 		int m = num / 2;
-		int flag = 0;
+		int count = 0;
 		if (num == 0 || num == 1) {
 			System.out.println("Not Prime");
 		} else if (num == 2) {
@@ -16,14 +16,14 @@ public class PrimeNumber {
 
 				if (num % i == 0) {
 
-					flag = 1;
+					count++;
 					System.out.println("Not Prime");
 					break;
 				}
 			}
 		}
 
-		if (flag == 0) {
+		if (count == 0) {
 			System.out.println("Prime");
 		}
 
