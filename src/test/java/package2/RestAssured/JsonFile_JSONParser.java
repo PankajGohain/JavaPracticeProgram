@@ -11,7 +11,7 @@ import org.json.simple.parser.ParseException;
 
 //https://www.youtube.com/watch?v=U-5VHRvOFpA
 
-public class JsonFileParse {
+public class JsonFile_JSONParser {
 
 	public static void main(String[] args) throws IOException, ParseException {
 
