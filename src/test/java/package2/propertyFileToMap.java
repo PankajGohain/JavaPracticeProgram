@@ -19,7 +19,7 @@ public class propertyFileToMap {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
 
-		System.out.println(mapFromFile.get("user"));
+		System.out.println(mapFromFile.get("db.user"));
 	}
 
 	public static Map<String, String> HashMapFromTextFile() throws IOException {

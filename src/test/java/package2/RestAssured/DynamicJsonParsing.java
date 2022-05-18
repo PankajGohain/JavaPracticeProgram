@@ -12,15 +12,37 @@ import org.json.JSONObject;
 public class DynamicJsonParsing {
 
 	public static void main(String[] args) throws JSONException {
-		String inputJson = "{\r\n" + "  \"destination_addresses\": [\r\n" + "    \"Philadelphia, PA, USA\"\r\n"
-				+ "  ],\r\n" + "  \"origin_addresses\": [\r\n" + "    \"New York, NY, USA\"\r\n" + "  ],\r\n"
-				+ "  \"rows\": [{\r\n" + "    \"elements\": [{\r\n" + "      \"distance\": {\r\n"
-				+ "        \"text\": \"94.6 mi\",\r\n" + "        \"value\": 152193\r\n" + "      },\r\n"
-				+ "      \"duration\": {\r\n" + "        \"text\": \"1 hour 44 mins\",\r\n"
-				+ "        \"value\": 6227\r\n" + "      },\r\n" + "      \"status\": \"OK\"\r\n" + "    }]\r\n"
-				+ "  }],\r\n" + "  \"status\": \"OK\"\r\n" + "}";
+		/*
+		 * String inputJson = "{\r\n" + "  \"destination_addresses\": [\r\n" +
+		 * "    \"Philadelphia, PA, USA\"\r\n" + "  ],\r\n" +
+		 * "  \"origin_addresses\": [\r\n" + "    \"New York, NY, USA\"\r\n" +
+		 * "  ],\r\n" + "  \"rows\": [{\r\n" + "    \"elements\": [{\r\n" +
+		 * "      \"distance\": {\r\n" + "        \"text\": \"94.6 mi\",\r\n" +
+		 * "        \"value\": 152193\r\n" + "      },\r\n" +
+		 * "      \"duration\": {\r\n" + "        \"text\": \"1 hour 44 mins\",\r\n" +
+		 * "        \"value\": 6227\r\n" + "      },\r\n" +
+		 * "      \"status\": \"OK\"\r\n" + "    }]\r\n" + "  }],\r\n" +
+		 * "  \"status\": \"OK\"\r\n" + "}";
+		 */
+		
+		String inputJson="{\r\n" + "\"problems\": [{\r\n" + "    \"Diabetes\":[{\r\n" + "        \"medications\":[{\r\n"
+		+ "            \"medicationsClasses\":[{\r\n" + "                \"className\":[{\r\n"
+		+ "                    \"associatedDrug\":[{\r\n" + "                        \"name\":\"asprin\",\r\n"
+		+ "                        \"dose\":\"\",\r\n" + "                        \"strength\":\"500 mg\"\r\n"
+		+ "                    }],\r\n" + "                    \"associatedDrug#2\":[{\r\n"
+		+ "                        \"name\":\"somethingElse\",\r\n"
+		+ "                        \"dose\":\"\",\r\n" + "                        \"strength\":\"500 mg\"\r\n"
+		+ "                    }]\r\n" + "                }],\r\n" + "                \"className2\":[{\r\n"
+		+ "                    \"associatedDrug\":[{\r\n" + "                        \"name\":\"asprin\",\r\n"
+		+ "                        \"dose\":\"\",\r\n" + "                        \"strength\":\"500 mg\"\r\n"
+		+ "                    }],\r\n" + "                    \"associatedDrug#2\":[{\r\n"
+		+ "                        \"name\":\"somethingElse\",\r\n"
+		+ "                        \"dose\":\"\",\r\n" + "                        \"strength\":\"500 mg\"\r\n"
+		+ "                    }]\r\n" + "                }]\r\n" + "            }]\r\n" + "        }],\r\n"
+		+ "        \"labs\":[{\r\n" + "            \"missing_field\": \"missing_value\"\r\n" + "        }]\r\n"
+		+ "    }],\r\n" + "    \"Asthma\":[{}]\r\n" + "}]}";
 		JSONObject inputJSONOBject = new JSONObject(inputJson);
-		getKey(inputJSONOBject, "text");
+		getKey(inputJSONOBject, "strength");
 	}
 
 	public static void parseObject(JSONObject json, String key) throws JSONException {
