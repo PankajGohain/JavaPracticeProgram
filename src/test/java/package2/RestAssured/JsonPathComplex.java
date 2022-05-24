@@ -3,6 +3,8 @@ package package2.RestAssured;
 import java.util.List;
 import java.util.Map;
 
+import org.checkerframework.checker.index.qual.LessThan;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -38,6 +40,10 @@ public class JsonPathComplex {
 		List<Map<Object, Object>> addListMap = res.jsonPath().getList("address");	// Fetch list of Company of type Map
 		System.out.println(addListMap);
 		System.out.println(addListMap.get(1).get("geo"));
+		
+		RestAssured.given().relaxedHTTPSValidation("TLS").post("rfersg").then().time(lessThan(5000));
+		
+		
 	}
 
 }

@@ -1,5 +1,12 @@
 package package2;
 
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import static org.hamcrest.Matchers.*;
+
 public class API {
 
 	public static void main(String[] args) {
@@ -43,8 +50,13 @@ public class API {
 		 System.out.println("Key: " + header.getName() + " Value: " + header.getValue());
 		 }
 		 
+		 RequestSpecification spec=RestAssured.given().basePath("ggb").baseUri("fdfdf").header("ggrr","ffrg").accept(ContentType.JSON).contentType("application/json");
 		 
+		 RequestSpecBuilder brb=new RequestSpecBuilder();
+		 RequestSpecification spec1=brb.build();
+		 Response res1=RestAssured.given().then().body("dgrt", equalTo(45),"fgt",greaterThan(766)).
 		 
+		 response.jsonPath();
 	}
 
 }

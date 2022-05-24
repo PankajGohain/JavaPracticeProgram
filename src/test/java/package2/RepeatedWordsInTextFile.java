@@ -37,7 +37,7 @@ public class RepeatedWordsInTextFile {
 		Set<String> s = map.keySet();
 
 		for (String abc : s) {
-			System.out.println(abc + "=" + map.get(abc));
+			System.out.println(abc + "=" + map.get(abc));	
 		}
 
 		Set<Entry<String, Integer>> entrySet = map.entrySet();
