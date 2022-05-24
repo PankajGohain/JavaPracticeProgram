@@ -10,7 +10,7 @@ public class RemoveSpecialCharacter {
 		int temp = 0;
 		String longestWord = "";
 		for (int i = 0; i < str1.length; i++) {
-			if (temp < str1[i].length()) {
+			if (str1[i].length()>temp) {
 				temp = str1[i].length();
 				longestWord = str1[i];
 			}

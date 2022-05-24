@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 
 public class PropertiesToHashMap {
 
@@ -19,7 +20,8 @@ public class PropertiesToHashMap {
 
 		Map<String, String> propToMap = new LinkedHashMap<String, String>();
 
-		for (String Key : prop.stringPropertyNames()) {
+		Set<String> propKey=prop.stringPropertyNames();
+		for (String Key : propKey) {
 			propToMap.put(Key, prop.get(Key).toString());
 		}
 

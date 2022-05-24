@@ -2,7 +2,8 @@ package package2.RestAssured;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-//The simplest and straightforward way of mapping dynamic JSON properties is to use the JsonNode class provided by Jackson. 
+//The simplest and straightforward way of mapping dynamic JSON properties is to use the JsonNode class 
+//provided by Jackson. 
 //This class is capable of handling dynamic properties.
 //https://attacomsian.com/blog/jackson-map-dynamic-json-object
 

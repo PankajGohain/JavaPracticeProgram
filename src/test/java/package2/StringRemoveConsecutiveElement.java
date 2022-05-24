@@ -19,6 +19,7 @@ public class StringRemoveConsecutiveElement {
 				System.out.println(arr[j]);
 			}
 		}
+		//Copies the specified range of the specified array into a new array.
 		System.out.println(Arrays.copyOfRange(arr, 0, j + 1));
 
 	//	System.out.println(arr);

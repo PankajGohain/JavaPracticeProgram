@@ -10,15 +10,15 @@ public class StringReverseWordInPlace {
 
 		String str = "This is an easy Java Program";
 		String arr[] = str.split(" ");
-		
-		String ns="";
-		
-		for(String s:arr) {
+
+		String newStr = "";
+
+		for (String s : arr) {
 			StringBuilder sb = new StringBuilder(s);
 			sb.reverse();
-			ns=ns+sb+" ";
+			newStr = newStr + sb + " ";
 		}
 
-		System.out.println(ns);
+		System.out.println(newStr);
 	}
 }

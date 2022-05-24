@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class HashMapWithArrayList {
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
 		// Creating HashMap object with ArrayList as Value
 		HashMap<String, ArrayList<String>> map = new HashMap<>();

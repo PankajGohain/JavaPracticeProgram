@@ -47,11 +47,19 @@ public class BasicsRestAPI {
 		// Update Place
 		String newAddress = "Summer Walk, Africa";
 
-		Response res=given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
-				.body("{\r\n" + "\"place_id\":\"" + placeId + "\",\r\n" + "\"address\":\"" + newAddress + "\",\r\n"
+		Response res=given()
+					.log().all()
+					.queryParam("key", "qaclick123")
+					.header("Content-Type", "application/json")
+					.body("{\r\n" + "\"place_id\":\"" + placeId + "\",\r\n" + "\"address\":\"" + newAddress + "\",\r\n"
 						+ "\"key\":\"qaclick123\"\r\n" + "}")
-				.when().put("maps/api/place/update/json").then().assertThat().log().all().statusCode(200)
-				.body("msg", equalTo("Address successfully updated")).extract().response();
+				.when()
+					.put("maps/api/place/update/json")
+				.then()
+					.assertThat().log().all()
+					.statusCode(200)
+					.body("msg", equalTo("Address successfully updated"))
+					.extract().response();
 
 		// Get Place
 

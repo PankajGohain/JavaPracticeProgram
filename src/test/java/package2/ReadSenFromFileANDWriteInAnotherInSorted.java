@@ -15,20 +15,15 @@ public class ReadSenFromFileANDWriteInAnotherInSorted {
 
 		String fileRead = "";
 		String toSort[] = null;
-		try {
+
 			BufferedReader rd = new BufferedReader(
 					new FileReader(System.getProperty("user.dir") + "\\src\\Package2\\ReadSentence.txt"));
 			while ((fileRead = rd.readLine()) != null) {
 				toSort = fileRead.toLowerCase().split(" ");
 			}
-
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
 		/*
-		 * List<String> arr = Arrays.asList(toSort); Collections.sort(arr);
+		 * List<String> arr = Arrays.asList(toSort); 
+		 * Collections.sort(arr);
 		 * System.out.println(arr);
 		 */
 		

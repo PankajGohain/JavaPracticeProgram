@@ -27,8 +27,11 @@ public class StringReverseWordInMyString {
 //Approach 2
 
 /*
- * for(String w:words) { StringBuilder sb=new StringBuilder(w); sb.reverse();
- * reversedString=reversedString+sb.toString()+ " "; }
+ * for(String w:words) { 
+ * StringBuilder sb=new StringBuilder(w); 
+ * sb.reverse();
+ * reversedString=reversedString+sb.toString()+ " "; 
+ * }
  * 
  * System.out.println(reversedString);
  */

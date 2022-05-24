@@ -33,7 +33,7 @@ public class ComparePortionOfJsonObjectsByJsonAssert {
 	
 	// I want to assert address objects are same in both
 	// Since "address" and "communicationAddress" are JSON Objects so we need to use proper method i.e. getJSONObject()
-	JSONAssert.assertEquals(jsonObject1.getJSONObject("address"), jsonObject2.getJSONObject("communicationAddress"), JSONCompareMode.LENIENT);
+		JSONAssert.assertEquals(jsonObject1.getJSONObject("address"), jsonObject2.getJSONObject("communicationAddress"), JSONCompareMode.LENIENT);
    }
 
 }

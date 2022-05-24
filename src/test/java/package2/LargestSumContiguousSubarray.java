@@ -15,7 +15,7 @@ public class LargestSumContiguousSubarray {
 		for (int i = 0; i < arr.length; i++) {
 			sum = sum + arr[i];
 
-			if (largest_sum < sum) {
+			if (sum>largest_sum) {
 				largest_sum = sum;
 				start = count; // these two lines are to find the starting & ending position
 				end = i;

@@ -25,6 +25,8 @@ public class JsonFiletoHashMapDataProvider {
 		list = JsonFiletoHashMap
 				.readJson(System.getProperty("user.dir") + "\\src\\test\\java\\package2\\JsonDataProvider.json");
 
-		return new Object[][] { { list.get(0) }, { list.get(1) } };
+		return new Object[][] { { list.get(0) }, 
+								{ list.get(1) } 
+							  };
 	}
 }

@@ -1,109 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-12T13:55:46 IST" name="Default suite" finished-at="2022-05-12T13:55:46 IST" duration-ms="106">
+  <suite started-at="2022-05-18T23:35:04 IST" name="Default suite" finished-at="2022-05-18T23:35:05 IST" duration-ms="260">
     <groups>
     </groups>
-    <test started-at="2022-05-12T13:55:46 IST" name="Default test" finished-at="2022-05-12T13:55:46 IST" duration-ms="106">
-      <class name="DataProviderExamples.DummyTestCase">
-        <test-method signature="TestCase1(java.lang.String,java.lang.Integer)[pri:0, instance:DataProviderExamples.DummyTestCase@223191a6]" started-at="2022-05-12T13:55:46 IST" name="TestCase1" data-provider="getTestData" finished-at="2022-05-12T13:55:46 IST" duration-ms="9" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[user1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8956]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-05-18T23:35:04 IST" name="Default test" finished-at="2022-05-18T23:35:05 IST" duration-ms="260">
+      <class name="package2.RestAssured.CompareJsonObjectByJackson">
+        <test-method signature="compareTwoJsonObjects()[pri:0, instance:package2.RestAssured.CompareJsonObjectByJackson@7334aada]" started-at="2022-05-18T23:35:04 IST" name="compareTwoJsonObjects" finished-at="2022-05-18T23:35:05 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase1 -->
-        <test-method signature="TestCase1(java.lang.String,java.lang.Integer)[pri:0, instance:DataProviderExamples.DummyTestCase@223191a6]" started-at="2022-05-12T13:55:46 IST" name="TestCase1" data-provider="getTestData" finished-at="2022-05-12T13:55:46 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[user2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8976]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- compareTwoJsonObjects -->
+        <test-method signature="compareTwoJsonObjectsWithDifferentOrderOfRootElements()[pri:0, instance:package2.RestAssured.CompareJsonObjectByJackson@7334aada]" started-at="2022-05-18T23:35:05 IST" name="compareTwoJsonObjectsWithDifferentOrderOfRootElements" finished-at="2022-05-18T23:35:05 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase1 -->
-        <test-method signature="TestCase1(java.lang.String,java.lang.Integer)[pri:0, instance:DataProviderExamples.DummyTestCase@223191a6]" started-at="2022-05-12T13:55:46 IST" name="TestCase1" data-provider="getTestData" finished-at="2022-05-12T13:55:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[user3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4456]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- compareTwoJsonObjectsWithDifferentOrderOfRootElements -->
+        <test-method signature="compareTwoNestedJsonObjects()[pri:0, instance:package2.RestAssured.CompareJsonObjectByJackson@7334aada]" started-at="2022-05-18T23:35:05 IST" name="compareTwoNestedJsonObjects" finished-at="2022-05-18T23:35:05 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase1 -->
-        <test-method signature="TestCase2(java.lang.String,java.lang.String)[pri:0, instance:DataProviderExamples.DummyTestCase@223191a6]" started-at="2022-05-12T13:55:46 IST" name="TestCase2" data-provider="getTestData" finished-at="2022-05-12T13:55:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Asia]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase2 -->
-        <test-method signature="TestCase2(java.lang.String,java.lang.String)[pri:0, instance:DataProviderExamples.DummyTestCase@223191a6]" started-at="2022-05-12T13:55:46 IST" name="TestCase2" data-provider="getTestData" finished-at="2022-05-12T13:55:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Russia]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Europe]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase2 -->
-        <test-method signature="TestCase2(java.lang.String,java.lang.String)[pri:0, instance:DataProviderExamples.DummyTestCase@223191a6]" started-at="2022-05-12T13:55:46 IST" name="TestCase2" data-provider="getTestData" finished-at="2022-05-12T13:55:46 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Brazil]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Africa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase2 -->
-      </class> <!-- DataProviderExamples.DummyTestCase -->
+        </test-method> <!-- compareTwoNestedJsonObjects -->
+      </class> <!-- package2.RestAssured.CompareJsonObjectByJackson -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

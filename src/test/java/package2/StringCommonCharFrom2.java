@@ -3,7 +3,7 @@ package package2;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class StringCommenCharFrom2 {
+public class StringCommonCharFrom2 {
 
 	public static void main(String[] args) {
 

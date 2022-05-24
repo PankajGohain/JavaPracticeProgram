@@ -1,6 +1,5 @@
 package package2.RestAssured;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
