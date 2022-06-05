@@ -14,37 +14,23 @@ public class JiraE2E {
 		// TODO Auto-generated method stub
 
 		RestAssured.baseURI = "http://localhost:8080";
-
 		// Login Scenario
-
 		SessionFilter session = new SessionFilter();
-
 		String response = given().relaxedHTTPSValidation().header("Content-Type", "application/json").body("{\r\n" +
-
 				"    \"username\": \"RahulShetty\",\r\n" +
-
 				"    \"password\": \"XXXX11\"\r\n" +
-
 				"}").log().all().filter(session).when().post("/rest/auth/1/session").then().log().all().extract()
 				.response().asString();
 
 		String expectedMessage = "Hi How are you?";
-
 		// Add comment
-
 		String addCommentResponse = given().pathParam("key", "10101").log().all()
 				.header("Content-Type", "application/json").body("{\r\n" +
-
 						"    \"body\": \"" + expectedMessage + "\",\r\n" +
-
 						"    \"visibility\": {\r\n" +
-
 						"        \"type\": \"role\",\r\n" +
-
 						"        \"value\": \"Administrators\"\r\n" +
-
 						"    }\r\n" +
-
 						"}")
 				.filter(session).when().post("/rest/api/2/issue/{key}/comment").then().log().all()
 				.assertThat().statusCode(201).extract().response().asString();

@@ -15,7 +15,7 @@ public class JsonPathComplex {
 	public static void main(String[] args) {
 
 		Response res = RestAssured.given().get("https://jsonplaceholder.typicode.com/users");
-
+		
 		// System.out.println(res.asPrettyString());
 
 		String Unames = res.jsonPath().getString("username"); // Print all entries
@@ -39,9 +39,9 @@ public class JsonPathComplex {
 
 		List<Map<Object, Object>> addListMap = res.jsonPath().getList("address");	// Fetch list of Company of type Map
 		System.out.println(addListMap);
-		System.out.println(addListMap.get(1).get("geo"));
+		System.out.println("Geo location:"+addListMap.get(1).get("geo"));
 		
-		RestAssured.given().relaxedHTTPSValidation("TLS").post("rfersg").then().time(lessThan(5000));
+	//	RestAssured.given().relaxedHTTPSValidation("TLS").post("rfersg").then().time(lessThan(5000));
 		
 		
 	}

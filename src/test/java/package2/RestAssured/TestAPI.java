@@ -19,8 +19,9 @@ public class TestAPI {
 		
 		RestAssured.useRelaxedHTTPSValidation();
 		
-		Response res=given().log().if.relaxedHTTPSValidation().get("https://www.google.com").then().log().ifError().extract().response().as("Sample.class");
-		res.jsonPath()
+		Response res=given().log().relaxedHTTPSValidation().get("https://www.google.com").then().log().ifError().
+						extract().response().as("Sample.class");
+		res.jsonPath();
 		
 		Cookie c=res.getDetailedCookie("abcd");
 		c.hasExpiryDate();

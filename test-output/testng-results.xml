@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-18T23:35:04 IST" name="Default suite" finished-at="2022-05-18T23:35:05 IST" duration-ms="260">
+  <suite started-at="2022-06-03T12:33:35 IST" name="Default suite" finished-at="2022-06-03T12:33:37 IST" duration-ms="2152">
     <groups>
     </groups>
-    <test started-at="2022-05-18T23:35:04 IST" name="Default test" finished-at="2022-05-18T23:35:05 IST" duration-ms="260">
-      <class name="package2.RestAssured.CompareJsonObjectByJackson">
-        <test-method signature="compareTwoJsonObjects()[pri:0, instance:package2.RestAssured.CompareJsonObjectByJackson@7334aada]" started-at="2022-05-18T23:35:04 IST" name="compareTwoJsonObjects" finished-at="2022-05-18T23:35:05 IST" duration-ms="206" status="PASS">
+    <test started-at="2022-06-03T12:33:35 IST" name="Default test" finished-at="2022-06-03T12:33:37 IST" duration-ms="2152">
+      <class name="WireMock.WireMockStartServerFromCode">
+        <test-method is-config="true" signature="initializeServer()[pri:0, instance:WireMock.WireMockStartServerFromCode@2cc3ad05]" started-at="2022-06-03T12:33:35 IST" name="initializeServer" finished-at="2022-06-03T12:33:35 IST" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- compareTwoJsonObjects -->
-        <test-method signature="compareTwoJsonObjectsWithDifferentOrderOfRootElements()[pri:0, instance:package2.RestAssured.CompareJsonObjectByJackson@7334aada]" started-at="2022-05-18T23:35:05 IST" name="compareTwoJsonObjectsWithDifferentOrderOfRootElements" finished-at="2022-05-18T23:35:05 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- initializeServer -->
+        <test-method signature="testCode()[pri:0, instance:WireMock.WireMockStartServerFromCode@2cc3ad05]" started-at="2022-06-03T12:33:35 IST" name="testCode" finished-at="2022-06-03T12:33:37 IST" duration-ms="1462" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- compareTwoJsonObjectsWithDifferentOrderOfRootElements -->
-        <test-method signature="compareTwoNestedJsonObjects()[pri:0, instance:package2.RestAssured.CompareJsonObjectByJackson@7334aada]" started-at="2022-05-18T23:35:05 IST" name="compareTwoNestedJsonObjects" finished-at="2022-05-18T23:35:05 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testCode -->
+        <test-method is-config="true" signature="closeServer()[pri:0, instance:WireMock.WireMockStartServerFromCode@2cc3ad05]" started-at="2022-06-03T12:33:37 IST" name="closeServer" finished-at="2022-06-03T12:33:37 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- compareTwoNestedJsonObjects -->
-      </class> <!-- package2.RestAssured.CompareJsonObjectByJackson -->
+        </test-method> <!-- closeServer -->
+      </class> <!-- WireMock.WireMockStartServerFromCode -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

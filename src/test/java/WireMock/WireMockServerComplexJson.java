@@ -28,7 +28,7 @@ public class WireMockServerComplexJson {
 		
 		ResponseDefinitionBuilder mockResponse = new ResponseDefinitionBuilder();
 		mockResponse.withStatus(201);
-		mockResponse.withBodyFile(System.getProperty("user.dir")+"/src/test/java/resources/__files/json/books.json");
+		mockResponse.withBodyFile("/home/qainfotech/Desktop/Test_Zapp/JavaProgram_latest/JavaPracticeProgram/src/test/java/package2/parseJson.json");
 		WireMock.stubFor(WireMock.get(END_POINT).willReturn(mockResponse));
 	}
 	
