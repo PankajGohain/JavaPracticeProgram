@@ -34,8 +34,7 @@ public class ObjectMapperExp {
 		ObjectMapper mapper = new ObjectMapper();
 
 		Map<Object, Object> hmap = new HashedMap<Object, Object>();
-		hmap = mapper.readValue(json, new TypeReference<Map<Object, Object>>() {
-		});
+		hmap = mapper.readValue(json, new TypeReference<Map<Object, Object>>() {});
 
 		System.out.println(hmap);
 

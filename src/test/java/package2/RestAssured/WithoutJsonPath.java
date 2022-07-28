@@ -32,14 +32,6 @@ public class WithoutJsonPath {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
 
 		// setRoot
 		String response1 = when().get("https://jsonplaceholder.typicode.com/photos").then().extract().asString();

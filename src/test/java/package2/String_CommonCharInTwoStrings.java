@@ -5,7 +5,7 @@ import java.util.List;
 
 //http://makeseleniumeasy.com/2019/04/08/frequently-asked-java-programs-31-java-program-to-find-common-characters-in-two-given-strings/
 
-public class CommonCharInTwoStrings {
+public class String_CommonCharInTwoStrings {
 
 	public static void main(String[] args) {
 

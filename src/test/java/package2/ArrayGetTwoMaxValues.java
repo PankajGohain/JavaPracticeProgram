@@ -15,8 +15,10 @@ public class ArrayGetTwoMaxValues {
 				max1 = n;
 				System.out.println(max1 + "=============" + max2);
 			} else if (n>max2) {
+				
+			} else if (n > max2) {
 				max2 = n;
-				System.out.println("=============" + max2);
+			
 			}
 		}
 

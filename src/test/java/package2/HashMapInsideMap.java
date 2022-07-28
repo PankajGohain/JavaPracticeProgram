@@ -24,7 +24,7 @@ public class HashMapInsideMap {
 		Map<String, String> test2 = Map.ofEntries(entry("a", "b"), entry("c", "d"));
 		System.out.println(test2);
 
-		Map<String, String> test1 = Map.of("e", "f", "g", "h");
+		Map<String, String> test1 = Map.of("e", "f", "g", "h", "i", "j");
 		System.out.println(test1);
 	}
 

@@ -34,7 +34,7 @@ public class BasicsRestAPI {
 					.assertThat()
 					.statusCode(200)
 					.body("scope", equalTo("APP"))
-					.header("server", "Apache/2.4.18 (Ubuntu)")
+					.header("server", "Apache/2.4.18 (Ubuntu)") // (String headerName, String expectedValue)
 					.extract()
 					.response().asString();
 

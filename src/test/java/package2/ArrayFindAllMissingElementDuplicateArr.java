@@ -10,8 +10,8 @@ public class ArrayFindAllMissingElementDuplicateArr {
 
 		int temp[] = new int[arr.length]; //it initializes the array as array
 
-		for (int a : arr) {
-			temp[a] = 1;
+		for (int i = 0; i < arr.length; i++) {
+			temp[arr[i]] = 1;
 		}
 
 		System.out.println(Arrays.toString(temp));

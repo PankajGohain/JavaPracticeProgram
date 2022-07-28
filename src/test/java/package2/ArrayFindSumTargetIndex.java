@@ -29,7 +29,7 @@ public class ArrayFindSumTargetIndex {
 				return new int[] { map.get(secondNumber), i };
 
 			} else {
-				map.put(arr[i], i);
+				map.put(arr[i], i); //put value & index of that value
 			}
 
 		}

@@ -2,7 +2,7 @@ package package2;
 
 import java.util.Arrays;
 
-public class AnagramString {
+public class String_AnagramString {
 
 	public static void main(String[] args) {
 

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 //An anagram is a word or phrase that's formed by rearranging the letters of another word or phrase.
 
-public class AnagramSentence {
+public class String_AnagramSentence {
 
 	public static void main(String[] args) {
 

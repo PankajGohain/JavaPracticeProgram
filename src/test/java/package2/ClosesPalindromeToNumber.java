@@ -4,7 +4,7 @@ public class ClosesPalindromeToNumber {
 
 	public static void main(String[] args) {
 
-		String num = "119";
+		String num = "146";
 		System.out.println(nearestPalindromic(num));
 	}
 

@@ -2,7 +2,8 @@ package package2.RestAssured;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-//Another way of storing the dynamic JSON property like address is to use the Java Map collection. This will also remove the extra Jackson dependency.
+//Another way of storing the dynamic JSON property like address is to use the Java Map collection. 
+//This will also remove the extra Jackson dependency.
 //https://attacomsian.com/blog/jackson-map-dynamic-json-object
 public class DynamicJson_Map {
 

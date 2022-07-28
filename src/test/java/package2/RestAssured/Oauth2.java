@@ -26,7 +26,6 @@ public class Oauth2 {
 		System.out.println(code);
 
 		String response =
-
 				given()	.urlEncodingEnabled(false)
 						.queryParams("code", code)
 						.queryParams("client_id",

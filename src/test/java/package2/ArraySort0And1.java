@@ -16,7 +16,7 @@ public class ArraySort0And1 {
 		}
 
 		for (int a : arr) {
-			System.out.print(a + " ");
+			System.out.print(a + ",");
 		}
 	}
 

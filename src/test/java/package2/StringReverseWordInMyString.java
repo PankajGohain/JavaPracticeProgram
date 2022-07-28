@@ -28,6 +28,8 @@ public class StringReverseWordInMyString {
 
 /*
  * for(String w:words) { 
+ * for(String w:words) 
+ * {
  * StringBuilder sb=new StringBuilder(w); 
  * sb.reverse();
  * reversedString=reversedString+sb.toString()+ " "; 

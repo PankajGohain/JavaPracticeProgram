@@ -7,11 +7,11 @@ public class ReverseString {
 	public static void main(String[] args) {
 		String input = "spoon";
 
-		char[] charArray = input.toCharArray();
+		char[] arr = input.toCharArray();
 		String rev = "";
 
-		for (int i = charArray.length - 1; i >= 0; i--) {
-			rev = rev + charArray[i];
+		for (int i = arr.length - 1; i >= 0; i--) {
+			rev = rev + arr[i];
 		}
 
 		System.out.println("Reverse string is:" + rev);
