@@ -15,8 +15,7 @@ import io.restassured.response.Response;
 public class BasicsRestAPI {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-// validate if Add Place API is workimg as expected 
+        // validate if Add Place API is workimg as expected 
 		// Add place-> Update Place with New Address -> Get Place to validate if New
 		// address is present in response
 
