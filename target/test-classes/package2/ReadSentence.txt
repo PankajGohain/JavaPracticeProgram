@@ -1,1 +1,0 @@
-Now in order to read content from one file and write it into another file 123
